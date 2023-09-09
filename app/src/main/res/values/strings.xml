@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tracker</string>
+
+    <string name="home_screen_desc">Home screen</string>
+    <string name="beers_screen_desc">Beer screen</string>
+    <string name="profile_screen_desc">Profile screen</string>
+</resources>
