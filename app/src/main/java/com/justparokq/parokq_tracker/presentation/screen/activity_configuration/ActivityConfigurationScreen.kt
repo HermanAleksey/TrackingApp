@@ -1,11 +1,11 @@
-package com.justparokq.parokq_tracker.presentation.screen.example
+package com.justparokq.parokq_tracker.presentation.screen.activity_configuration
 
 import androidx.compose.runtime.Composable
 import com.ramcosta.composedestinations.annotation.Destination
 
-@Destination(start = true)
+@Destination
 @Composable
-fun ExampleScreen(
+fun ActivityConfigurationScreen(
 //    viewModel: EnterScreenViewModel,
 ) {
 //    val navDependencies = ((LocalContext.current as? Activity) as NavDependenciesProvider)

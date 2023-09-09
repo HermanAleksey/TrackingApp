@@ -127,6 +127,7 @@ dependencies {
     implementation(project(":core:design_system"))
     implementation(project(":core:model"))
     implementation(project(":core:testing"))
+    implementation(project(":feature:splash_screen"))
 
     implementation(Dependencies.compose_material)
     implementation(Dependencies.compose_ui_tooling_preview)

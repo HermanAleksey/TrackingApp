@@ -16,11 +16,11 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.justparokq.core.common.utils.UiText
-import com.justparokq.parokq_tracker.presentation.screen.example.NavGraphs
-import com.justparokq.parokq_tracker.presentation.screen.example.appCurrentDestinationAsState
-import com.justparokq.parokq_tracker.presentation.screen.example.destinations.TypedDestination
-import com.justparokq.parokq_tracker.presentation.screen.example.startAppDestination
-
+import com.justparokq.parokq_tracker.presentation.screen.NavGraphs
+import com.justparokq.parokq_tracker.presentation.screen.appCurrentDestinationAsState
+import com.justparokq.parokq_tracker.presentation.screen.destinations.ActivityConfigurationScreenDestination
+import com.justparokq.parokq_tracker.presentation.screen.destinations.TypedDestination
+import com.justparokq.parokq_tracker.presentation.screen.startAppDestination
 import com.ramcosta.composedestinations.navigation.navigate
 import com.ramcosta.composedestinations.spec.DirectionDestinationSpec
 
@@ -29,11 +29,11 @@ enum class BottomBarDestinations(
     val description: UiText,
     val icon: ImageVector,
 ) {
-//    Main(
-//        direction = MainScreenDestination,
-//        description = UiText.DynamicString("TODO ADD"),
-//        icon = Icons.Default.Home
-//    ),
+    Main(
+        direction = ActivityConfigurationScreenDestination,
+        description = UiText.DynamicString("TODO ADD"),
+        icon = Icons.Default.Home
+    ),
 }
 
 @Composable

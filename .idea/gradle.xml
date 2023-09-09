@@ -17,6 +17,8 @@
             <option value="$PROJECT_DIR$/core/design_system" />
             <option value="$PROJECT_DIR$/core/model" />
             <option value="$PROJECT_DIR$/core/testing" />
+            <option value="$PROJECT_DIR$/feature" />
+            <option value="$PROJECT_DIR$/feature/splash_screen" />
           </set>
         </option>
       </GradleProjectSettings>

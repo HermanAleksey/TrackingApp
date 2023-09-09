@@ -3,7 +3,7 @@ package com.justparokq.parokq_tracker.presentation
 import androidx.lifecycle.ViewModel
 import com.justparokq.core.design_system.dialog.MedioseDialogProvider
 import com.justparokq.core.design_system.toolbar.ToolbarProvider
-import com.ramcosta.composedestinations.wrapper.DestinationWrapper
+import com.justparokq.parokq_tracker.presentation.navigation.DestinationWrapper
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
@@ -27,12 +27,12 @@ class MainViewModel @Inject constructor() : ViewModel() {
     val toolbarProvider = _toolbarProvider.asStateFlow()
 
     fun onDestinationChanged(destination: DestinationWrapper) {
-//        _toolbarIsVisible.update {
-//            destination.toolbarVisible
-//        }
-//        _bottomBarIsVisible.update {
-//            destination.bottomBarVisible
-//        }
+        _toolbarIsVisible.update {
+            destination.toolbarVisible
+        }
+        _bottomBarIsVisible.update {
+            destination.bottomBarVisible
+        }
     }
 
     fun onShowDialogRequested(dialogProvider: MedioseDialogProvider) {

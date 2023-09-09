@@ -5,3 +5,5 @@ include(":core:common")
 include(":core:model")
 include(":core:testing")
 
+include(":feature:splash_screen")
+
